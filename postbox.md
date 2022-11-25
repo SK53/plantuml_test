@@ -6,7 +6,7 @@ Basic notions from Anoff's [blog](https://blog.anoff.io/2018-07-31-diagrams-with
 
 == Very Basic OSM Post Box ==
 
-![Base Postbox ](http://www.plantuml.com/plantuml/proxy?src=https://raw.github.com/SK53/plantuml_test/master/assets/postbox0.iuml)
+![Base Postbox](http://www.plantuml.com/plantuml/proxy?src=https://raw.github.com/SK53/plantuml_test/master/assets/postbox0.iuml)
 
 == First separation of concepts ==
 
