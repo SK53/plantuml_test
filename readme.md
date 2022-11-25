@@ -21,7 +21,7 @@
 
 ### System Overview
 
-![system overview](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/SK63/plantuml_test/master/assets/overview.iuml)
+![system overview](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/SK53/plantuml_test/master/assets/overview.iuml)
 
 ## Hardware
 
@@ -47,7 +47,7 @@ The hardware setup consists of a [ESP8266](https://en.wikipedia.org/wiki/ESP8266
 
 The ESP8266 chip is programmed with the [esp8266.ino file](esp8266.ino) using the [Arduino IDE](https://www.arduino.cc/en/Main/Software?). Secrets for connecting to local WiFi and endpoints to post data need to be defined in a `esp8266.secrets.c` file which is specified at [esp8266.secrets.template.c](esp8266.secrets.template.c).
 
-![esp8266 flowchart](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/SK53/plantuml_test/master/assets/esp8266.iuml)
+![esp8266 test ERD](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/SK53/plantuml_test/master/assets/esp8266.iuml)
 
 ## Setup
 
