@@ -1,5 +1,6 @@
 @startuml
 
+start
 
 entity "Car" as car {
 
@@ -46,5 +47,6 @@ factoryCarSupport ||..o{ factory
 
 factoryCarSupport |o..o{ car
 
+end
 
 @enduml
