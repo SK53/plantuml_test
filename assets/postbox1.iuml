@@ -7,10 +7,6 @@ entity "Post Box" as amenity=post_box {
   --
   * geolocation : geodata
   *last_updated : timestamp with time zone
-  "post_box:type" : string
-  ref : string
-  collection_times : string
-  operator : string
 }
 
 entity "Postal Collection Service" as service=postal_collection {
