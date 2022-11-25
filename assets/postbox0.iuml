@@ -11,6 +11,7 @@ entity "Post Box" as amenity=post_box {
   ref : string
   collection_times : string
   operator : string
+  blbbla : string
 }
 
 @enduml
