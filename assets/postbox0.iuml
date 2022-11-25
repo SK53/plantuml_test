@@ -5,9 +5,9 @@ entity "Post Box" as amenity=post_box {
 
   *id : int <<primary key>>
   --
-  *geolocation : int
   *last_updated : timestamp with time zone
-  "post_box:type" : string
+  *geolocation : int
+ "post_box:type" : string
   ref : string
   collection_times : string
   operator : string
