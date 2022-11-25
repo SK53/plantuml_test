@@ -1,0 +1,37 @@
+@startuml
+
+
+entity "Post Box" as amenity=post_box {
+
+  *id : int <<primary key>>
+  --
+  * geolocation: geodata
+  *last_updated : timestamp with time zone
+  "post_box:type" : string
+  ref : string
+  collection_times : string
+  operator : string
+}
+
+entity "Postal Collection Service" as service=postal_collection {
+
+  *id : int <<primary key>>
+  --
+  ref : string <<unique key>>
+  collection_times : string
+  operator : string
+}
+
+entity "Physical Post Box" as man_made=post_box {
+
+  *id : int <<primary key>>
+  --
+  ref : string <<unique key>>
+  
+  }
+
+servce=postal_collection ||..o{ amenity=post_box
+
+man_made=post_box |o..o{ amenity=post_box
+
+@enduml
