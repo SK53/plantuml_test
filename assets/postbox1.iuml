@@ -1,7 +1,7 @@
 @startuml
 
 
-entity "Post Box" as amenity=post_box {
+entity "Post Box" as Amenity_PostBox {
 
   *id : int <<primary key>>
   --
@@ -9,7 +9,7 @@ entity "Post Box" as amenity=post_box {
   *last_updated : timestamp with time zone
 }
 
-entity "Postal Collection Service" as service=postal_collection {
+entity "Postal Collection Service" as Service_PostalCollection {
 
   *id : int <<primary key>>
   --
@@ -18,7 +18,7 @@ entity "Postal Collection Service" as service=postal_collection {
   operator : string
 }
 
-entity "Physical Post Box" as man_made=post_box {
+entity "Physical Post Box" as ManMade_PostBox {
 
   *id : int <<primary key>>
   --
@@ -26,8 +26,8 @@ entity "Physical Post Box" as man_made=post_box {
   
   }
 
-amenity=post_box ||..o| service=postal_collection
+Amenity_PostBox ||..o| Service_PostalCollection
 
-amenity=post_box |o..o| man_made=post_box
+Amenity_PostBox |o..o| ManMade_PostBox
 
 @enduml
