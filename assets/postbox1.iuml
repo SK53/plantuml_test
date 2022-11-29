@@ -26,6 +26,8 @@ entity "Physical Post Box" as man_made=post_box {
   
   }
 
+amenity=post_box ||..o| service=postal_collection
 
+amenity=post_box |o..o| man_made=post_box
 
 @enduml
